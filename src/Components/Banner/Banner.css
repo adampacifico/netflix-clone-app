@@ -1,0 +1,66 @@
+.banner {
+  /* object-fit: contain; */
+  width: 100%;
+  height: 530px;
+  position: relative;
+}
+.banner__contents {
+  display: flex;
+  margin-left: 50px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100%;
+}
+
+.banner__contents h1 {
+  padding-bottom: 20px;
+  font-size: 3rem;
+}
+.banner__contents .banner_btns,
+.banner__contents .movie__overview {
+  padding-bottom: 15px;
+}
+.banner__contents .movie__overview {
+  width: 60%;
+}
+.banner__contents .banner_btns > button {
+  margin-right: 10px;
+  padding: 8px 15px;
+  cursor: pointer;
+  border: none;
+  border-radius: 3px;
+  word-spacing: 4px;
+  font-weight: 600;
+  font-size: 1rem;
+}
+.banner_btns > button:hover {
+    opacity: .8;
+}
+
+.fade__bottom{
+    height: 5rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-image: linear-gradient(
+        180deg, transparent, rgba(37,37,37,0.61), #111
+    );
+}
+.btn_moreinfo {
+  background-color: rgba(109, 109, 110, 0.7);
+  color: white;
+}
+@media (max-width: 426px) {
+  .banner__contents {
+    margin-left: 20px;
+  }
+  .banner__contents h1 {
+    font-size: 2rem;
+  }
+  .banner__contents p{
+    font-size: 0.7rem;
+  }
+}
